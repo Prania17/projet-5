@@ -1,21 +1,3 @@
-let mySprite = sprites.create(img`
-    . . . . . . f f f f . . . . . . 
-    . . . . f f f 2 2 f f f . . . . 
-    . . . f f f 2 2 2 2 f f f . . . 
-    . . f f f e e e e e e f f f . . 
-    . . f f e 2 2 2 2 2 2 e e f . . 
-    . . f e 2 f f f f f f 2 e f . . 
-    . . f f f f e e e e f f f f . . 
-    . . f 4 f b f 4 4 f b f 4 f . . 
-    . . f 4 4 1 f 4 4 f 1 4 4 f . . 
-    . . f 4 4 4 4 4 4 4 4 4 4 f . . 
-    . . . f 4 4 4 4 4 4 4 4 f . . . 
-    . . e 4 f 2 2 2 2 2 2 f 4 e . . 
-    . . 4 d f 5 5 5 5 5 5 f d 4 . . 
-    . . 4 4 f 2 2 2 2 2 2 f 4 4 . . 
-    . . . . . f f f f f f . . . . . 
-    . . . . . f f . . f f . . . . . 
-    `, SpriteKind.Player)
 scene.setBackgroundImage(img`
     6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
     6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
@@ -139,3 +121,21 @@ scene.setBackgroundImage(img`
     6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
     `)
 tiles.setCurrentTilemap(tilemap`niveau1`)
+let mySprite = sprites.create(img`
+    . . . . f f f f . . . . . 
+    . . f f f f f f f f . . . 
+    . f f f f f f c f f f . . 
+    f f f f f f c c f f f c . 
+    f f f c f f f f f f f c . 
+    c c c f f f e e f f c c . 
+    f f f f f e e f f c c f . 
+    f f f b f e e f b f f f . 
+    . f 4 1 f 4 4 f 1 4 f . . 
+    . f e 4 4 4 4 4 4 e f . . 
+    . f f f e e e e f f f . . 
+    f e f b 7 7 7 7 b f e f . 
+    e 4 f 7 7 7 7 7 7 f 4 e . 
+    e e f 6 6 6 6 6 6 f e e . 
+    . . . f f f f f f . . . . 
+    . . . f f . . f f . . . . 
+    `, SpriteKind.Player)
